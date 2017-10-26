@@ -18,7 +18,7 @@ class listener:
             self.recv_file(file_name, client)
 
     def recv_file(self, file_name, client):
-        with open("leaks/{}".format(file_name), "wb") as dest_file:
+        with open("/var/www/cyberleaks/leaks/{}".format(file_name), "wb") as dest_file:
             src_file = client.makefile("rb")
             shutil.copyfileobj(src_file, dest_file)
         print("File {} received!".format(file_name))

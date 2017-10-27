@@ -10,3 +10,6 @@
 |WS1 Lubuntu|46.228.143.100|---|user|user66|---|---|
 |WS2 Windows XP|1.6.0.100|---|sulo|---|---|---|
 |Kali|175.45.176.100|---|root|toor|---|---|
+
+
+![Topology](images/topologia4_pelkistetty.jpg)

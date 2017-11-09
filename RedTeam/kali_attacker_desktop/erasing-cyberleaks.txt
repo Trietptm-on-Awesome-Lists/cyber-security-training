@@ -1,0 +1,4 @@
+Connect to our secret backdoor at www.cyberleaks.com:
+
+nc www.cyberleaks.com 1337
+getrekt

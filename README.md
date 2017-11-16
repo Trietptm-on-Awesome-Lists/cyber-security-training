@@ -2,8 +2,10 @@
 Documentation for Cyber-Security training course
 
 ## Docs
-[Harjoitussuunnitelmat](Docs/word/Harjoitussuunnitelmat)
+[Harjoitussuunnitelmat](https://github.com/LuckyHacker/cyber-security-training/tree/master/Docs/word/harjoitussuunnitelmat)
 
-[Kokousmuistiot](Docs/word/Kokousmuistiot)
+[Kokousmuistiot](https://github.com/LuckyHacker/cyber-security-training/tree/master/Docs/word/kokousmuistiot)
 
-[Viikkoraportit](Docs/word/Viikkoraportit)
+[Viikkoraportit](https://github.com/LuckyHacker/cyber-security-training/tree/master/Docs/word/viikkoraportit)
+
+[Perehdytys diat](https://github.com/LuckyHacker/cyber-security-training/tree/master/Docs/powerpoint)

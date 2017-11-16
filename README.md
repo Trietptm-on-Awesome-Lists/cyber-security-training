@@ -2,4 +2,6 @@
 Documentation for Cyber-Security training course
 
 ## Docs
-[CyberLeaks](cyberleaks/README.md)
+[Harjoitussuunnitelmat](Docs/word/Harjoitussuunnitelmat)
+[Kokousmuistiot](Docs/word/Kokousmuistiot)
+[Viikkoraportit](Docs/word/Viikkoraportit)

@@ -9,3 +9,10 @@ Documentation for Cyber-Security training course
 [Viikkoraportit](https://github.com/LuckyHacker/cyber-security-training/tree/master/Docs/word/viikkoraportit)
 
 [Perehdytys diat](https://github.com/LuckyHacker/cyber-security-training/tree/master/Docs/powerpoint)
+
+
+## Configurations
+
+[CyberLeaks](https://github.com/LuckyHacker/cyber-security-training/tree/master/cyberleaks)
+
+[WordPress](https://github.com/LuckyHacker/cyber-security-training/tree/master/wordpress_confs)

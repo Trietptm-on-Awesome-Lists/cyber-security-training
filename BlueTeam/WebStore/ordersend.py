@@ -35,20 +35,20 @@ def send_random_order(s):
 
 
 def is_order():
-    try:
-        with open(access_log_path, "r") as f:
-            for line in f.readlines():
-                log_lines += 1
-            last_line = line
+    with open(access_log_path, "r") as f:
+        for line in f.readlines():
+            log_lines += 1
+        last_line = line
 
-            if match_string in last_line:
-                return True
+        if match_string in last_line:
+            return True
 
-            return False
-    except FileNotFoundError as e:
-        print(e)
         return False
 
+
+def erase_log():
+    with open(access_log_path, "w") as f:
+        f.write("")
 
 
 if __name__ == "__main__":
@@ -68,8 +68,4 @@ if __name__ == "__main__":
             send_random_order(s)
 
         if log_lines > 1000:
-            try:
-                os.remove(access_log_path)
-                log_lines = 0
-            except FileNotFoundError as e:
-                print(e)
+            erase_log()

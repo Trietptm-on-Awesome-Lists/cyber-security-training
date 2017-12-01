@@ -35,8 +35,8 @@ Handle orders
 |--|--|
 |root|root66|
 
-#### Windows XP:
+#### Lubuntu 17.04:
 
 |ip addr|user|password|
 |--|--|--|
-|46.228.143.101|sulo|---|
+|46.228.143.102|user|user66|

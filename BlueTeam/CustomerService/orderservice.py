@@ -1,7 +1,7 @@
 import socket
 import time
 
-host = ("127.0.0.1", 4444)
+host = ("46.228.143.102", 4444)
 log_path = "/home/user/orderlog.txt"
 
 

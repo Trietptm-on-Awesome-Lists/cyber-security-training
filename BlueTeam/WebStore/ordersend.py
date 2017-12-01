@@ -2,7 +2,7 @@ import socket
 import random
 import time
 
-host = ("127.0.0.1", 4444)
+host = ("46.228.143.102", 4444)
 speed = 0.5                 # seconds
 
 access_log_path = "/var/log/apache2/access.log"

@@ -65,4 +65,7 @@ if __name__ == "__main__":
         time.sleep(speed)
         if is_order():
             send_random_order(s)
-        os.remove(access_log_path)
+        try:
+            os.remove(access_log_path)
+        except FileNotFoundError as e:
+            print(e)

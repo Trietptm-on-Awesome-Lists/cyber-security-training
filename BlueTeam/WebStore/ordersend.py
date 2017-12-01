@@ -6,6 +6,7 @@ import os
 host = ("46.228.143.102", 4444)
 speed = 0.001
 
+log_lines = 0
 access_log_path = "/var/log/apache2/access.log"
 match_string = "wordpress-paypal-shopping-cart"
 
@@ -37,7 +38,7 @@ def is_order():
     try:
         with open(access_log_path, "r") as f:
             for line in f.readlines():
-                pass
+                log_lines += 1
             last_line = line
 
             if match_string in last_line:
@@ -65,7 +66,10 @@ if __name__ == "__main__":
         time.sleep(speed)
         if is_order():
             send_random_order(s)
-        try:
-            os.remove(access_log_path)
-        except FileNotFoundError as e:
-            print(e)
+
+        if log_lines > 1000:
+            try:
+                os.remove(access_log_path)
+                log_lines = 0
+            except FileNotFoundError as e:
+                print(e)

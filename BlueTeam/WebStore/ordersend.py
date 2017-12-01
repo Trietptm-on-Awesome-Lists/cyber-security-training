@@ -38,7 +38,7 @@ def is_order():
     with open(access_log_path, "r") as f:
         for line in f.readlines():
             log_lines += 1
-            last_line = line
+        last_line = line
 
         if match_string in last_line:
             return True
@@ -48,7 +48,7 @@ def is_order():
 
 def erase_log():
     with open(access_log_path, "w") as f:
-        f.write("")
+        f.write("blank\n")
 
 
 if __name__ == "__main__":

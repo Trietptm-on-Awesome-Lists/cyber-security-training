@@ -5,4 +5,7 @@ url = "www.webbikauppa.fi/index.php/ostoskori"
 
 while 1:
     time.sleep(0.5)
-    requests.get(url)
+    try:
+        requests.get(url)
+    except:
+        pass

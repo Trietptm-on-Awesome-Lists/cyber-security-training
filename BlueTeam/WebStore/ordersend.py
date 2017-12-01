@@ -34,15 +34,20 @@ def send_random_order(s):
 
 
 def is_order():
-    with open(access_log_path, "r") as f:
-        for line in f.readlines():
-            pass
-        last_line = line
+    try:
+        with open(access_log_path, "r") as f:
+            for line in f.readlines():
+                pass
+            last_line = line
 
-        if match_string in last_line:
-            return True
+            if match_string in last_line:
+                return True
 
+            return False
+    except FileNotFoundError as e:
+        print(e)
         return False
+
 
 
 if __name__ == "__main__":

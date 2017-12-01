@@ -13,4 +13,4 @@
 |Kali|175.45.176.100|---|root|toor|---|---|---|---|
 
 
-![Topology](images/topologia6.jpg)
+![Topology](images/topologia9.jpg)

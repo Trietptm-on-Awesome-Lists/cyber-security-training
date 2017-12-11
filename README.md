@@ -8,7 +8,7 @@ Documentation for Cyber-Security training course
 
 [Viikkoraportit](https://github.com/LuckyHacker/cyber-security-training/tree/master/Docs/word/viikkoraportit)
 
-[Perehdytys diat](https://github.com/LuckyHacker/cyber-security-training/tree/master/Docs/powerpoint)
+[Perehdytysdiat](https://github.com/LuckyHacker/cyber-security-training/tree/master/Docs/powerpoint)
 
 
 ## Configurations

@@ -9,7 +9,7 @@ speed = 0.001
 global log_lines
 log_lines = 0
 access_log_path = "/var/log/apache2/access.log"
-match_string = "wordpress-paypal-shopping-cart"
+match_string = "ostoskori"
 
 
 customers = [   "Eetu Luukkanen",
@@ -50,7 +50,7 @@ def is_order():
 
 def erase_log():
     with open(access_log_path, "w") as f:
-        f.write("blank\n")
+        f.write("")
 
 
 if __name__ == "__main__":

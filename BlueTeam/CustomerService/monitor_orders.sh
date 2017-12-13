@@ -1,1 +1,1 @@
-watch -n 0.2 "tail -n 25 /home/user/orderlog.txt"
+python3 /home/user/orderservice.py
